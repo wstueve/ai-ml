@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-03-11T18:32:09.868Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="BrA-CuHVVT_tUwCRHMhL" version="21.0.2" type="github">
+<mxfile host="app.diagrams.net" modified="2023-03-11T19:20:21.582Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="acEkYIHta2NvZjhhzYvg" version="21.0.2" type="github">
   <diagram name="Data Warehouse" id="kMoMCdpy5W8sNm-j3-ZK">
     <mxGraphModel dx="1885" dy="860" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
@@ -25,17 +25,14 @@
         <mxCell id="n4prdCTuh-MEloS2UhjO-5" value="distribute" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
           <mxGeometry x="342.26" y="620" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="n4prdCTuh-MEloS2UhjO-12" value="IoT Device" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.devices.modem;" parent="1" vertex="1">
-          <mxGeometry x="21.89" y="622" width="54" height="34" as="geometry" />
-        </mxCell>
         <mxCell id="n4prdCTuh-MEloS2UhjO-15" value="Cron" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.devices.hard_disk;" parent="1" vertex="1">
-          <mxGeometry x="28.890000000000004" y="540" width="40" height="54" as="geometry" />
+          <mxGeometry x="28.5" y="596.5" width="40" height="54" as="geometry" />
         </mxCell>
         <mxCell id="n4prdCTuh-MEloS2UhjO-16" value="App" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.devices.cell_phone_iphone_standalone;" parent="1" vertex="1">
-          <mxGeometry x="36.39" y="370" width="25" height="42" as="geometry" />
+          <mxGeometry x="39.000000000000014" y="526" width="25" height="42" as="geometry" />
         </mxCell>
         <mxCell id="n4prdCTuh-MEloS2UhjO-17" value="AV Stream" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.devices.headset;" parent="1" vertex="1">
-          <mxGeometry x="30.89" y="452" width="36" height="48" as="geometry" />
+          <mxGeometry x="33.5" y="438" width="36" height="48" as="geometry" />
         </mxCell>
         <mxCell id="n4prdCTuh-MEloS2UhjO-21" value="transform" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
           <mxGeometry x="549.9399999999999" y="401" width="80" height="80" as="geometry" />
@@ -65,19 +62,19 @@
           <mxGeometry x="950.2999999999998" y="623" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="oZlIYxZioADE4AoBYQHe-9" value="Database" style="sketch=0;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.databases.database;" parent="1" vertex="1">
-          <mxGeometry x="31.39" y="689" width="35" height="49" as="geometry" />
+          <mxGeometry x="33.5" y="684" width="35" height="49" as="geometry" />
         </mxCell>
         <mxCell id="oZlIYxZioADE4AoBYQHe-10" value="&lt;h1 style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Scalable Data Warehouse Pipeline Logical Design&lt;/font&gt;&lt;/h1&gt;&lt;p style=&quot;font-size: 13px;&quot;&gt;1. The data can be produced by a wide array of sources, but, first, in order to be processed, the data must be transformed into a message.&amp;nbsp; The message represents the contract of the pipeline with the outside world.&amp;nbsp; This contract can be well defined with many different schemas or very loosely defined with only a few primitives required by the message provider.&amp;nbsp; &lt;br style=&quot;font-size: 13px;&quot;&gt;&lt;br style=&quot;font-size: 13px;&quot;&gt;2. Once created, these messages are then sent for ingestion.&amp;nbsp; Messages can be streamed, batched or both.&amp;nbsp; The ingestion process must not only be able to quickly store the messages, but also must be able to quickly distribute them.&amp;nbsp; Log based systems such as Kafka or Google Cloud Pub/Sub are well suited for this process.&amp;nbsp; &lt;br style=&quot;font-size: 13px;&quot;&gt;&lt;br style=&quot;font-size: 13px;&quot;&gt;3.&amp;nbsp; Consumers are then notified of or periodically check for new messages.&amp;nbsp; The data in the message is then validated, updated, enriched, transformed and acted upon by the consumers and ultimately outputting the data to the warehouse.&amp;nbsp; Separating ingestion and consumption is key to being able to scale and process cost effectively for large volumes of messages.&amp;nbsp;&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;font-size: 13px;&quot;&gt;4. The warehouse then indexes and stores the data so that it can be efficiently utilized at scale. Security and models to enable self service capabilities should be considered when designing the warehouse to reduce toil and increase business agility.&lt;br style=&quot;font-size: 13px;&quot;&gt;&lt;br style=&quot;font-size: 13px;&quot;&gt;5. Humans and machines make use of the data warehouse models with reports, analytics, and AI/ML tools.&amp;nbsp; Data mining and further ad hoc analysis also often happens at this stage.&lt;br style=&quot;font-size: 13px;&quot;&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=13;" parent="1" vertex="1">
-          <mxGeometry x="25.3" y="16" width="1050" height="304" as="geometry" />
+          <mxGeometry x="20" y="16" width="1055.3" height="304" as="geometry" />
         </mxCell>
-        <mxCell id="oZlIYxZioADE4AoBYQHe-28" value="Message stream" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="103.89" y="511" width="160" height="20" as="geometry" />
+        <mxCell id="oZlIYxZioADE4AoBYQHe-28" value="Message streams" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="95.39" y="433" width="160" height="20" as="geometry" />
         </mxCell>
         <mxCell id="oZlIYxZioADE4AoBYQHe-29" value="Message batches" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="78.89" y="644.5" width="190" height="20" as="geometry" />
+          <mxGeometry x="80.39" y="655" width="190" height="20" as="geometry" />
         </mxCell>
         <mxCell id="dWF9ONsK556TgpkqojAo-25" value="Msg" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
-          <mxGeometry x="168.61000000000004" y="449.5" width="40" height="30" as="geometry" />
+          <mxGeometry x="164.57000000000005" y="489" width="40" height="30" as="geometry" />
         </mxCell>
         <mxCell id="dWF9ONsK556TgpkqojAo-30" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fillColor=#e1d5e7;strokeColor=#9673a6;endWidth=22;endSize=9.33;width=18;labelBackgroundColor=none;" edge="1" parent="1">
           <mxGeometry x="0.0296" width="50" height="50" relative="1" as="geometry">
@@ -101,52 +98,54 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="dWF9ONsK556TgpkqojAo-36" value="Msg" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
-          <mxGeometry x="135.24000000000004" y="469.5" width="40" height="30" as="geometry" />
+          <mxGeometry x="131.20000000000005" y="509" width="40" height="30" as="geometry" />
         </mxCell>
         <mxCell id="dWF9ONsK556TgpkqojAo-37" value="Msg" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
-          <mxGeometry x="123.61000000000003" y="439.5" width="40" height="30" as="geometry" />
+          <mxGeometry x="119.57000000000002" y="479" width="40" height="30" as="geometry" />
         </mxCell>
         <mxCell id="dWF9ONsK556TgpkqojAo-39" value="Msg" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
-          <mxGeometry x="195.24000000000004" y="469.5" width="40" height="30" as="geometry" />
+          <mxGeometry x="191.20000000000005" y="509" width="40" height="30" as="geometry" />
         </mxCell>
         <mxCell id="dWF9ONsK556TgpkqojAo-40" value="Msg" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
-          <mxGeometry x="195.24000000000004" y="439.5" width="40" height="30" as="geometry" />
+          <mxGeometry x="191.20000000000005" y="479" width="40" height="30" as="geometry" />
         </mxCell>
         <mxCell id="dWF9ONsK556TgpkqojAo-41" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fillColor=#e1d5e7;strokeColor=#9673a6;endWidth=18;endSize=6.03;width=15;labelBackgroundColor=none;" edge="1" parent="1">
           <mxGeometry x="0.0296" width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="245.24000000000004" y="468.5" as="sourcePoint" />
-            <mxPoint x="275.24" y="468.5" as="targetPoint" />
+            <mxPoint x="248.39000000000004" y="548.5" as="sourcePoint" />
+            <mxPoint x="278.39" y="548.5" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="dWF9ONsK556TgpkqojAo-42" value="Msg" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
-          <mxGeometry x="103.89" y="604.5" width="40" height="30" as="geometry" />
+          <mxGeometry x="121.69" y="620.5" width="40" height="30" as="geometry" />
         </mxCell>
         <mxCell id="dWF9ONsK556TgpkqojAo-43" value="Msg" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
-          <mxGeometry x="103.89" y="574.5" width="40" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="dWF9ONsK556TgpkqojAo-44" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fillColor=#e1d5e7;strokeColor=#9673a6;endWidth=18;endSize=6.03;width=15;labelBackgroundColor=none;" edge="1" parent="1">
-          <mxGeometry x="0.0296" width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="153.89000000000001" y="603.5" as="sourcePoint" />
-            <mxPoint x="183.89000000000001" y="603.5" as="targetPoint" />
-            <mxPoint as="offset" />
-          </mxGeometry>
+          <mxGeometry x="121.69" y="590.5" width="40" height="30" as="geometry" />
         </mxCell>
         <mxCell id="dWF9ONsK556TgpkqojAo-45" value="Msg" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
-          <mxGeometry x="204.93999999999997" y="604.5" width="40" height="30" as="geometry" />
+          <mxGeometry x="188.73999999999998" y="620.5" width="40" height="30" as="geometry" />
         </mxCell>
         <mxCell id="dWF9ONsK556TgpkqojAo-46" value="Msg" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
-          <mxGeometry x="204.93999999999997" y="574.5" width="40" height="30" as="geometry" />
+          <mxGeometry x="188.73999999999998" y="590.5" width="40" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="dWF9ONsK556TgpkqojAo-47" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fillColor=#e1d5e7;strokeColor=#9673a6;endWidth=18;endSize=6.03;width=15;labelBackgroundColor=none;" edge="1" parent="1">
+        <mxCell id="dWF9ONsK556TgpkqojAo-63" value="IoT Device" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.concepts.home;" vertex="1" parent="1">
+          <mxGeometry x="25.999999999999986" y="356" width="51" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="dWF9ONsK556TgpkqojAo-64" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fillColor=#e1d5e7;strokeColor=#9673a6;endWidth=18;endSize=6.03;width=15;labelBackgroundColor=none;" edge="1" parent="1">
           <mxGeometry x="0.0296" width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="254.93999999999997" y="603.5" as="sourcePoint" />
-            <mxPoint x="284.93999999999994" y="603.5" as="targetPoint" />
+            <mxPoint x="78.39000000000001" y="548.5" as="sourcePoint" />
+            <mxPoint x="108.39000000000001" y="548.5" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="dWF9ONsK556TgpkqojAo-50" value="..." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=23;" vertex="1" parent="1">
-          <mxGeometry x="93.89" y="474.5" width="38.37" height="20" as="geometry" />
+        <mxCell id="dWF9ONsK556TgpkqojAo-66" value="Msg" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="151.85000000000005" y="458" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dWF9ONsK556TgpkqojAo-67" value="Msg" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="121.17" y="560.5" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dWF9ONsK556TgpkqojAo-68" value="Msg" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="188.21999999999997" y="560.5" width="40" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
