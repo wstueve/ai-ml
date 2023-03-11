@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-03-11T17:09:44.260Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="jglLBtBs54e_78dB44SR" version="21.0.2" type="github">
+<mxfile host="app.diagrams.net" modified="2023-03-11T17:33:46.371Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="4uKroZbKFkd_8PudU_0N" version="21.0.2" type="github">
   <diagram name="Data Warehouse" id="kMoMCdpy5W8sNm-j3-ZK">
     <mxGraphModel dx="1414" dy="645" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
@@ -16,9 +16,6 @@
         <mxCell id="n4prdCTuh-MEloS2UhjO-1" value="Ingest" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;fontStyle=0;fontSize=20;" parent="1" vertex="1">
           <mxGeometry x="280" y="265" width="170" height="340" as="geometry" />
         </mxCell>
-        <mxCell id="n4prdCTuh-MEloS2UhjO-2" value="Pub/Sub" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="235" y="760" width="120" height="80" as="geometry" />
-        </mxCell>
         <mxCell id="n4prdCTuh-MEloS2UhjO-3" value="read" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
           <mxGeometry x="325" y="283" width="80" height="80" as="geometry" />
         </mxCell>
@@ -29,25 +26,22 @@
           <mxGeometry x="325" y="503" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="n4prdCTuh-MEloS2UhjO-6" value="Data" style="triangle;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
-          <mxGeometry x="116" y="285" width="37" height="42" as="geometry" />
+          <mxGeometry x="306" y="719" width="37" height="42" as="geometry" />
         </mxCell>
         <mxCell id="n4prdCTuh-MEloS2UhjO-8" value="Data" style="triangle;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
-          <mxGeometry x="116.88" y="584" width="48.5" height="56" as="geometry" />
+          <mxGeometry x="931.5" y="712" width="48.5" height="56" as="geometry" />
         </mxCell>
         <mxCell id="n4prdCTuh-MEloS2UhjO-12" value="IoT Device" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.devices.modem;" parent="1" vertex="1">
-          <mxGeometry x="30.88" y="505" width="54" height="34" as="geometry" />
+          <mxGeometry x="24.63" y="505" width="54" height="34" as="geometry" />
         </mxCell>
         <mxCell id="n4prdCTuh-MEloS2UhjO-15" value="Cron" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.devices.hard_disk;" parent="1" vertex="1">
-          <mxGeometry x="37.88" y="423" width="40" height="54" as="geometry" />
+          <mxGeometry x="31.630000000000003" y="423" width="40" height="54" as="geometry" />
         </mxCell>
         <mxCell id="n4prdCTuh-MEloS2UhjO-16" value="App" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.devices.cell_phone_iphone_standalone;" parent="1" vertex="1">
-          <mxGeometry x="45.38" y="253" width="25" height="42" as="geometry" />
+          <mxGeometry x="39.13" y="253" width="25" height="42" as="geometry" />
         </mxCell>
         <mxCell id="n4prdCTuh-MEloS2UhjO-17" value="Human&lt;br&gt;Interface&lt;br&gt;Device" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.devices.headset;" parent="1" vertex="1">
-          <mxGeometry x="39.88" y="321" width="36" height="48" as="geometry" />
-        </mxCell>
-        <mxCell id="n4prdCTuh-MEloS2UhjO-19" value="Dataflow" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="445" y="760" width="120" height="80" as="geometry" />
+          <mxGeometry x="33.63" y="321" width="36" height="48" as="geometry" />
         </mxCell>
         <mxCell id="n4prdCTuh-MEloS2UhjO-21" value="transform" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
           <mxGeometry x="540" y="284" width="80" height="80" as="geometry" />
@@ -58,9 +52,6 @@
         <mxCell id="n4prdCTuh-MEloS2UhjO-23" value="output" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
           <mxGeometry x="535" y="501" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="n4prdCTuh-MEloS2UhjO-24" value="BigQuery" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="655" y="760" width="120" height="80" as="geometry" />
-        </mxCell>
         <mxCell id="n4prdCTuh-MEloS2UhjO-26" value="persist" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
           <mxGeometry x="745" y="286" width="80" height="80" as="geometry" />
         </mxCell>
@@ -69,9 +60,6 @@
         </mxCell>
         <mxCell id="n4prdCTuh-MEloS2UhjO-28" value="model" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
           <mxGeometry x="745" y="506" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="n4prdCTuh-MEloS2UhjO-29" value="Looker Studio" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="865" y="668" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="n4prdCTuh-MEloS2UhjO-31" value="visualize" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
           <mxGeometry x="955" y="286" width="80" height="80" as="geometry" />
@@ -82,68 +70,65 @@
         <mxCell id="n4prdCTuh-MEloS2UhjO-33" value="explore" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
           <mxGeometry x="955" y="506" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="n4prdCTuh-MEloS2UhjO-34" value="AutoML" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="865" y="710" width="120" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="n4prdCTuh-MEloS2UhjO-35" value="Vertex AI" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="865" y="752" width="120" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="n4prdCTuh-MEloS2UhjO-36" value="DataPlex" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="655" y="710" width="120" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="n4prdCTuh-MEloS2UhjO-37" value="Looker" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="655" y="660" width="120" height="80" as="geometry" />
-        </mxCell>
         <mxCell id="oZlIYxZioADE4AoBYQHe-9" value="Database" style="sketch=0;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.databases.database;" parent="1" vertex="1">
-          <mxGeometry x="40.38" y="572" width="35" height="49" as="geometry" />
+          <mxGeometry x="34.13" y="572" width="35" height="49" as="geometry" />
         </mxCell>
-        <mxCell id="oZlIYxZioADE4AoBYQHe-10" value="&lt;h1&gt;Scalable Data Warehouse Pipeline Logical Design&lt;/h1&gt;&lt;p&gt;Data is produced and pushed or pulled into the ingestion process.&amp;nbsp; The key piece of this process is to quickly store and allow for consumers to read the data.&amp;nbsp; Log based systems such as Kafka or Google Cloud Pub/Sub are good at handling high volumes.&amp;nbsp; Once ingested, data is made available for consumers.&amp;nbsp; This is where the data is validated, enriched with other data and finally mapped to the output model and added to the data warehouse.&amp;nbsp; The warehouse then indexes and stores the data so that it can be interpreted by users via analytics tools such as Looker Studio or Power BI.&amp;nbsp; Also, AI and ML processing can also make use of this data.&lt;br&gt;&lt;br&gt;Data can be batched or streamed through each of the processes or even mixed and matched within the same process.&amp;nbsp; Data can come in many shapes and sizes and can change or produce uncountable edge cases, so, the design may require robust error handling and retry/rerun capabilities which can add significant time.&amp;nbsp; Often, data can be sampled for approximately the same business outcome.&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="10" y="14" width="1070" height="170" as="geometry" />
+        <mxCell id="oZlIYxZioADE4AoBYQHe-10" value="&lt;h1&gt;Scalable Data Warehouse Pipeline Logical Design&lt;/h1&gt;&lt;p&gt;The data is produced and then sent to the ingestion process.&amp;nbsp; The ingestion process must not only be able to quickly store the data, but also must be able to quickly distribute the data to consumers.&amp;nbsp; Log based systems such as Kafka or Google Cloud Pub/Sub are good at these tasks.&amp;nbsp; Once ingested, data can then be updated and enriched by the consumers.&amp;nbsp; Separating these two steps is key to being able to scale and process cost effectively for large volumes.&amp;nbsp; Consumers can also validate, send additional messages and finally mapped to the output model and added to the data warehouse.&amp;nbsp; The warehouse then indexes and stores the data so that it can be interpreted by users via analytics tools such as Looker Studio or Power BI.&amp;nbsp; Also, AI and ML processing can also make use of this data.&lt;br&gt;&lt;br&gt;The data can be batched or streamed through each of the processes or even mixed and matched within the same process.&amp;nbsp; The data can come in many shapes and sizes and can change or produce uncountable edge cases, so, the design may require robust error handling and retry/rerun capabilities which can add significant development time.&amp;nbsp; Often, the data can be sampled for approximately the same business outcome. The data is encapsulated by messages which are the contract between producers and consumers can have a well-defined schema associated for stream querying and faster validation.&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="10" y="14" width="1070" height="196" as="geometry" />
         </mxCell>
         <mxCell id="oZlIYxZioADE4AoBYQHe-18" value="Data" style="triangle;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
-          <mxGeometry x="164.5" y="285" width="37" height="42" as="geometry" />
+          <mxGeometry x="354.5" y="719" width="37" height="42" as="geometry" />
         </mxCell>
         <mxCell id="oZlIYxZioADE4AoBYQHe-19" value="Data" style="triangle;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
-          <mxGeometry x="213" y="285" width="37" height="42" as="geometry" />
+          <mxGeometry x="403" y="719" width="37" height="42" as="geometry" />
         </mxCell>
         <mxCell id="oZlIYxZioADE4AoBYQHe-28" value="Data can be Streamed" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="95" y="259" width="160" height="20" as="geometry" />
+          <mxGeometry x="285" y="639" width="160" height="20" as="geometry" />
         </mxCell>
         <mxCell id="oZlIYxZioADE4AoBYQHe-29" value="Data can be sent in Batches" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="95" y="357.5" width="170" height="20" as="geometry" />
+          <mxGeometry x="600" y="635.5" width="170" height="20" as="geometry" />
         </mxCell>
         <mxCell id="oZlIYxZioADE4AoBYQHe-33" value="Data" style="triangle;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
-          <mxGeometry x="118.75" y="381" width="37" height="42" as="geometry" />
+          <mxGeometry x="620" y="673.5" width="37" height="42" as="geometry" />
         </mxCell>
         <mxCell id="oZlIYxZioADE4AoBYQHe-34" value="Data" style="triangle;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
-          <mxGeometry x="118.75" y="429" width="37" height="42" as="geometry" />
+          <mxGeometry x="620" y="721.5" width="37" height="42" as="geometry" />
         </mxCell>
-        <mxCell id="oZlIYxZioADE4AoBYQHe-35" value="Data" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
-          <mxGeometry x="185.38" y="592" width="60" height="40" as="geometry" />
+        <mxCell id="oZlIYxZioADE4AoBYQHe-35" value="Data" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1000" y="720" width="60" height="40" as="geometry" />
         </mxCell>
         <mxCell id="oZlIYxZioADE4AoBYQHe-36" value="Data" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
-          <mxGeometry x="142.63" y="571" width="60" height="26" as="geometry" />
+          <mxGeometry x="957.25" y="699" width="60" height="26" as="geometry" />
         </mxCell>
         <mxCell id="oZlIYxZioADE4AoBYQHe-37" value="Data" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
-          <mxGeometry x="157.63" y="621" width="30" height="30" as="geometry" />
+          <mxGeometry x="972.25" y="749" width="30" height="30" as="geometry" />
         </mxCell>
         <mxCell id="oZlIYxZioADE4AoBYQHe-38" value="Data can be Mixed" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="114.63" y="544" width="130" height="20" as="geometry" />
+          <mxGeometry x="930" y="639" width="130" height="20" as="geometry" />
         </mxCell>
         <mxCell id="oZlIYxZioADE4AoBYQHe-39" value="Data" style="triangle;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
-          <mxGeometry x="118.75" y="476" width="37" height="42" as="geometry" />
+          <mxGeometry x="620" y="768.5" width="37" height="42" as="geometry" />
         </mxCell>
         <mxCell id="oZlIYxZioADE4AoBYQHe-40" value="Data" style="triangle;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
-          <mxGeometry x="213" y="377.5" width="37" height="42" as="geometry" />
+          <mxGeometry x="714.25" y="670" width="37" height="42" as="geometry" />
         </mxCell>
         <mxCell id="oZlIYxZioADE4AoBYQHe-41" value="Data" style="triangle;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
-          <mxGeometry x="213" y="425.5" width="37" height="42" as="geometry" />
+          <mxGeometry x="714.25" y="718" width="37" height="42" as="geometry" />
         </mxCell>
         <mxCell id="oZlIYxZioADE4AoBYQHe-42" value="Data" style="triangle;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
-          <mxGeometry x="213" y="472.5" width="37" height="42" as="geometry" />
+          <mxGeometry x="714.25" y="765" width="37" height="42" as="geometry" />
         </mxCell>
-        <mxCell id="oZlIYxZioADE4AoBYQHe-43" value="Data can have many different sources" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="3.26" y="208" width="113.62" height="30" as="geometry" />
+        <mxCell id="dWF9ONsK556TgpkqojAo-2" value="Message" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;verticalAlign=top;align=center;" vertex="1" parent="1">
+          <mxGeometry x="112" y="307" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="dWF9ONsK556TgpkqojAo-16" value="Data" style="triangle;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="316" y="729" width="37" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="dWF9ONsK556TgpkqojAo-17" value="Data" style="triangle;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="130" y="335" width="37" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="dWF9ONsK556TgpkqojAo-18" value="Data" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="190" y="326" width="30" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
